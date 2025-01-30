@@ -39,11 +39,9 @@ export class CreateQuestionController {
           authorId: userId,
           title,
           content,
-          slug: 'asd',
-        }
+          slug,
+        },
       })
-
-      return 'ok'
     }
 
     private convertToSlug(title: string): string {
